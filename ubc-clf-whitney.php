@@ -48,7 +48,7 @@ class UBC_CLF_Whitney {
 	public function add_actions() {
 
 		// Add custom UBC CLF Whitney
-		add_action( 'init', array( $this, 'init__add_clf_whitney' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'init__add_clf_whitney' ) );
 
 		// Add new settings panels
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
